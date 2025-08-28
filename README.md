@@ -7,7 +7,7 @@ This guide includes a **fast setup**, a **production Nginx** configuration (HTTP
 ## Features
 
 * 📬 Send / receive NITO
-* 🔐 Key Management — client-side keygen; import by **WIF/HEX** 
+* 🔐 Key Management — Client-side HD key generator; import by HD and WIF/HEX keys 
 * 🔒 Encrypted Messaging — Noble ECDH + **AES-GCM**, stored via **OP\_RETURN**
 * 🌍 Multi-Language — FR, EN, DE, ES, NL, RU, ZH
 * 🔄 UTXO Consolidation — one-click cleanup tool
@@ -17,7 +17,7 @@ This guide includes a **fast setup**, a **production Nginx** configuration (HTTP
 
 ## Quick Start (5 minutes)
 
-1. **Clone** to your web root:
+1. **Clone**:
 
    ```bash
    git clone https://github.com/biigbang0001/wallet-nito.git /var/www/wallet-nito
@@ -25,7 +25,7 @@ This guide includes a **fast setup**, a **production Nginx** configuration (HTTP
    sudo chown -R www-data:www-data .
    sudo chmod -R 755 .
    ```
-2. **(REQUIRED) Enable the keys counter** (PHP endpoint + writable file). See **Generated Keys Counter (Required)** below.
+2. **Enable the keys counter** (PHP endpoint + writable file). See **Generated Keys Counter ** below.
 3. **Reverse proxy `/api/`** to your NITO node with **Nginx** (sample config below).
 4. Visit `https://<your-domain>`:
 
