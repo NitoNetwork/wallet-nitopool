@@ -2,7 +2,7 @@
 
 **Wallet Nito** is a web-based cryptocurrency wallet for managing **NITO**. It lets you generate/import keys, send transactions securely, and **exchange encrypted messages on-chain**. The frontend talks to a NITO node for UTXOs, fee hints, transaction prep/broadcast, and ships with multilingual UI.
 
-This guide includes a **fast setup**, a **production Nginx** configuration (HTTPS + reverse proxy), and the **generated keys counter (REQUIRED)**.
+This guide includes a **fast setup**, a **production Nginx** configuration (HTTPS + reverse proxy), and the generated keys counter .
 
 ## Features
 
@@ -29,7 +29,7 @@ This guide includes a **fast setup**, a **production Nginx** configuration (HTTP
 3. **Reverse proxy `/api/`** to your NITO node with **Nginx** (sample config below).
 4. Visit `https://<your-domain>`:
 
-   * Generate or import a key (WIF/HEX unchanged).
+   * Generate or import a key .
    * See balance/UTXOs, **send NITO**, try **encrypted messaging**.
 
 > The reverse proxy avoids CORS issues and keeps your node URL/auth server-side.
